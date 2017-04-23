@@ -17,6 +17,10 @@
 		7E46BA201EAC6FCA0071A59F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E46BA1E1EAC6FCA0071A59F /* LaunchScreen.storyboard */; };
 		7E46BA2B1EAC6FCB0071A59F /* FolledoHCCCPongTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E46BA2A1EAC6FCB0071A59F /* FolledoHCCCPongTests.swift */; };
 		7E46BA361EAC6FCB0071A59F /* FolledoHCCCPongUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E46BA351EAC6FCB0071A59F /* FolledoHCCCPongUITests.swift */; };
+		7ECFBF541EACB7AE000675C0 /* GameOverScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7ECFBF501EACB7AE000675C0 /* GameOverScene.sks */; };
+		7ECFBF551EACB7AE000675C0 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECFBF511EACB7AE000675C0 /* GameOverScene.swift */; };
+		7ECFBF561EACB7AE000675C0 /* MenuScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7ECFBF521EACB7AE000675C0 /* MenuScene.sks */; };
+		7ECFBF571EACB7AE000675C0 /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECFBF531EACB7AE000675C0 /* MenuScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,10 @@
 		7E46BA311EAC6FCB0071A59F /* FolledoHCCCPongUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FolledoHCCCPongUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E46BA351EAC6FCB0071A59F /* FolledoHCCCPongUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolledoHCCCPongUITests.swift; sourceTree = "<group>"; };
 		7E46BA371EAC6FCB0071A59F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7ECFBF501EACB7AE000675C0 /* GameOverScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = GameOverScene.sks; path = ../../../GameOverScene.sks; sourceTree = "<group>"; };
+		7ECFBF511EACB7AE000675C0 /* GameOverScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameOverScene.swift; path = ../../../GameOverScene.swift; sourceTree = "<group>"; };
+		7ECFBF521EACB7AE000675C0 /* MenuScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = MenuScene.sks; path = ../../../MenuScene.sks; sourceTree = "<group>"; };
+		7ECFBF531EACB7AE000675C0 /* MenuScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuScene.swift; path = ../../../MenuScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,11 +112,12 @@
 			isa = PBXGroup;
 			children = (
 				7E46BA0F1EAC6FCA0071A59F /* AppDelegate.swift */,
-				7E46BA111EAC6FCA0071A59F /* GameScene.sks */,
 				7E46BA131EAC6FCA0071A59F /* Actions.sks */,
-				7E46BA151EAC6FCA0071A59F /* GameScene.swift */,
 				7E46BA171EAC6FCA0071A59F /* GameViewController.swift */,
 				7E46BA191EAC6FCA0071A59F /* Main.storyboard */,
+				7ECFBF5A1EACBD78000675C0 /* GameScene */,
+				7ECFBF581EACBA16000675C0 /* GameOver */,
+				7ECFBF591EACBA24000675C0 /* Menu Scene */,
 				7E46BA1C1EAC6FCA0071A59F /* Assets.xcassets */,
 				7E46BA1E1EAC6FCA0071A59F /* LaunchScreen.storyboard */,
 				7E46BA211EAC6FCA0071A59F /* Info.plist */,
@@ -132,6 +141,33 @@
 				7E46BA371EAC6FCB0071A59F /* Info.plist */,
 			);
 			path = FolledoHCCCPongUITests;
+			sourceTree = "<group>";
+		};
+		7ECFBF581EACBA16000675C0 /* GameOver */ = {
+			isa = PBXGroup;
+			children = (
+				7ECFBF501EACB7AE000675C0 /* GameOverScene.sks */,
+				7ECFBF511EACB7AE000675C0 /* GameOverScene.swift */,
+			);
+			name = GameOver;
+			sourceTree = "<group>";
+		};
+		7ECFBF591EACBA24000675C0 /* Menu Scene */ = {
+			isa = PBXGroup;
+			children = (
+				7ECFBF521EACB7AE000675C0 /* MenuScene.sks */,
+				7ECFBF531EACB7AE000675C0 /* MenuScene.swift */,
+			);
+			name = "Menu Scene";
+			sourceTree = "<group>";
+		};
+		7ECFBF5A1EACBD78000675C0 /* GameScene */ = {
+			isa = PBXGroup;
+			children = (
+				7E46BA111EAC6FCA0071A59F /* GameScene.sks */,
+				7E46BA151EAC6FCA0071A59F /* GameScene.swift */,
+			);
+			name = GameScene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,7 +283,9 @@
 				7E46BA1B1EAC6FCA0071A59F /* Main.storyboard in Resources */,
 				7E46BA121EAC6FCA0071A59F /* GameScene.sks in Resources */,
 				7E46BA1D1EAC6FCA0071A59F /* Assets.xcassets in Resources */,
+				7ECFBF541EACB7AE000675C0 /* GameOverScene.sks in Resources */,
 				7E46BA201EAC6FCA0071A59F /* LaunchScreen.storyboard in Resources */,
+				7ECFBF561EACB7AE000675C0 /* MenuScene.sks in Resources */,
 				7E46BA141EAC6FCA0071A59F /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +313,8 @@
 			files = (
 				7E46BA161EAC6FCA0071A59F /* GameScene.swift in Sources */,
 				7E46BA181EAC6FCA0071A59F /* GameViewController.swift in Sources */,
+				7ECFBF571EACB7AE000675C0 /* MenuScene.swift in Sources */,
+				7ECFBF551EACB7AE000675C0 /* GameOverScene.swift in Sources */,
 				7E46BA101EAC6FCA0071A59F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -530,6 +570,7 @@
 				7E46BA3C1EAC6FCB0071A59F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7E46BA3D1EAC6FCB0071A59F /* Build configuration list for PBXNativeTarget "FolledoHCCCPongTests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +579,7 @@
 				7E46BA3F1EAC6FCB0071A59F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7E46BA401EAC6FCB0071A59F /* Build configuration list for PBXNativeTarget "FolledoHCCCPongUITests" */ = {
 			isa = XCConfigurationList;
@@ -546,6 +588,7 @@
 				7E46BA421EAC6FCB0071A59F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
